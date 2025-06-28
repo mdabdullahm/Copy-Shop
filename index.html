@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Copy Shop - Your trusted printing partner</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+            <a href="#" class="text-2xl font-bold text-blue-600">Digital Copy Shop</a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 transition duration-300">Service</a>
+                <a href="#pricing" class="text-gray-600 hover:text-blue-600 transition duration-300">Price list</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+                <a href="#contact"
+                    class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Order</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white shadow-lg">
+                <div class="flex flex-col items-center space-y-4 py-4">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600">Service</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-blue-600">Price list</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+                    <a href="#contact"
+                        class="w-4/5 text-center bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Order</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="bg-blue-50 pt-20 pb-16 md:py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">Fast and reliable printing service</h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8">We are at your service for all your photocopying, printing, scanning, and binding needs.</p>
+                <a href="#contact"
+                    class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">Upload file now</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-xl font-semibold mb-2">Photocopy (black and white)</h3>
+                        <p class="text-gray-600">Black and white photocopying in the fastest time on a high-quality machine.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-xl font-semibold mb-2">Colorful prints</h3>
+                        <p class="text-gray-600">Vibrant color prints of any document or photo.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-xl font-semibold mb-2">Scanning and email</h3>
+                        <p class="text-gray-600">The convenience of scanning documents and sending them directly to your email.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-xl font-semibold mb-2">Lamination and binding</h3>
+                        <p class="text-gray-600">Spiral binding and lamination services for urgent papers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="bg-gray-100 py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Price list</h2>
+                <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-200">
+                            <tr>
+                                <th class="p-4 font-semibold">Service</th>
+                                <th class="p-4 font-semibold">Size</th>
+                                <th class="p-4 font-semibold text-right">Price (per page)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="p-4">Photocopy (black and white)</td>
+                                <td class="p-4">A4</td>
+                                <td class="p-4 text-right">৳ ২.০০</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-4">Print (black and white)</td>
+                                <td class="p-4">A4</td>
+                                <td class="p-4 text-right">৳ ৫.০০</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-4">Colorful prints</td>
+                                <td class="p-4">A4</td>
+                                <td class="p-4 text-right">৳ ২০.০০</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-4">Scanning</td>
+                                <td class="p-4">A4</td>
+                                <td class="p-4 text-right">৳ ১০.০০</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4">Lamination</td>
+                                <td class="p-4">ID Card Size</td>
+                                <td class="p-4 text-right">৳ ৩০.০০</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Contact & Order</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                    <!-- Contact Form -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6">Send your order.</h3>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Your name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Your email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message (print details)</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+                            <div>
+                                <label for="file-upload" class="block text-sm font-medium text-gray-700">Upload file (PDF, DOC, JPG)</label>
+                                <input type="file" id="file-upload" name="file-upload"
+                                    class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                            </div>
+                            <div>
+                                <button type="submit"
+                                    class="w-full bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700 transition duration-300">Submit Order</button>
+                            </div>
+                        </form>
+                        <div id="form-success" class="hidden mt-4 p-4 bg-green-100 text-green-800 rounded-md">
+                            Your order has been submitted successfully. We will contact you shortly.
+                        </div>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6">Our address</h3>
+                        <div class="space-y-4 text-gray-600">
+                            <p><strong>Address:</strong> 123/A, Main Road, Gulshan, Dhaka-1212, Bangladesh.</p>
+                            <p><strong>Phone:</strong> +880 1914745965</p>
+                            <p><strong>Email:</strong> contact@digitalcopyshop.com</p>
+                            <p><strong>Opening hours:</strong> Saturday - Thursday (9am - 8pm)</p>
+                        </div>
+                        <div class="mt-6">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.692349162945!2d90.41829981543301!3d23.79383839294244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a097dcb1c1%3A0x2825aac5204c3898!2sGulshan%2C%20Dhaka!5e0!3m2!1sen!2sbd!4w600!h450"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 Digital Copy Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
